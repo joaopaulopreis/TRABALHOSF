@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Cadastro de Cervejas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input [(ngModel)]="cerveja.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Descrição</ion-label>
+    <ion-input [(ngModel)]="cerveja.descricao" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Marca</ion-label>
+    <ion-input [(ngModel)]="cerveja.marca"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Data de Lançamento</ion-label>
+    <ion-datetime [(ngModel)]="cerveja.data_lancamento"
+            displayFormat="DD/MM/YYYY"
+            cancelText="Cancelar"
+            doneText="Selecionar"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cervejaria</ion-label>
+    <ion-input [(ngModel)]="cerveja.cervejaria"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Estilo</ion-label>
+    <ion-select [(ngModel)]="cerveja.estilo" multiple="false" placeholder="Selecione o Estilo">
+      <ion-select-option *ngFor="let estilo of estilo" [value]="estilo.valor">
+        {{estilo.descricao}}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Imagem</ion-label>
+    <ion-input [(ngModel)]="cerveja.foto_cerveja"></ion-input>
+  </ion-item>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="salvar()">
+      <ion-icon name="checkmark"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
+ 
