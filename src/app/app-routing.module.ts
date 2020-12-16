@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'cadastro-cerveja',
     loadChildren: () => import('./cadastro-cerveja/cadastro-cerveja.module').then( m => m.CadastroCervejaPageModule)
+  },
+  {
+    path: 'cadastro-cerveja/:codigo',
+    loadChildren: () => import('./cadastro-cerveja/cadastro-cerveja.module').then( m => m.CadastroCervejaPageModule)
   }
 ];
 

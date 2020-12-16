@@ -1,7 +1,7 @@
 <ion-app  >
     <ion-header>
       <ion-toolbar color="primary">
-        <ion-title> Tipos de Cervejas </ion-title>
+        <ion-title> Catálogo de Cervejas Artesanais </ion-title>
       </ion-toolbar>
     </ion-header>
   
@@ -32,6 +32,10 @@
                     </h3>
   
                     <h3>Marca: {{cerveja.marca}}</h3>
+
+                    <h3>Coloração: {{cerveja.coloracao}}</h3>
+
+                    <h3>Amargor: {{cerveja.amargor}}</h3>
                     
                     <h3>Cervejaria: {{cerveja.cervejaria}}</h3>
                     
@@ -47,9 +51,16 @@
               <ion-icon name="trash" slot="icon-only"></ion-icon>
             </ion-item-option>
           </ion-item-options>
+
+          <ion-item-options side="start">
+            <ion-item-option (click)="editar(cerveja)">
+              <ion-icon name="pencil" slot="icon-only"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
   
   
         </ion-item-sliding>
+
         <ion-fab vertical="bottom" horizontal="end">
           <ion-fab-button>
             <ion-icon name="add" [routerLink]="['/cadastro-cerveja']"></ion-icon>
@@ -59,8 +70,8 @@
   
       
       <ion-footer >
-        <ion-toolbar >
-          <ion-title  class= "text-center" >Todos direitos reservados João Paulo e Osmar Savi 2020</ion-title>
+        <ion-toolbar>
+            <h5 class= "text-center">Todos direitos reservados João Paulo e Osmar Savi 2020</h5>
         </ion-toolbar>
       </ion-footer>
   

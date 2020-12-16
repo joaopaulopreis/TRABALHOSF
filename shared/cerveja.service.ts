@@ -15,43 +15,55 @@ export class CervejaService {
         this.cerveja = [
             {
                 codigo: 1,
-                nome: 'D&D - Dungeons & Dragons e5',
-                foto_cerveja: 'https://cdn.ome.lt/zn4uV-QEUyGTaVIe2yKzijUXFEo=/670x0/smart/uploads/conteudo/fotos/dungeons-and-dragons-livro-do-jogador.jpg',
-                descricao: 'Manual - de como jogar Dungeons & Dragons um RPG muito famoso em sua modalidade.',
-                marca: 'Wizards of the Coast, TSR, Inc., Kenzer & Company',
-                cervejaria: 'Wizards of the Coast, TSR, Inc., Kenzer & Company',
+                nome: 'Saint Bier Pilsen',
+                foto_cerveja: 'http://www.saintbier.com/slir/w344-h866/upload/product_image/pilsen-5c3dd75e16ca4.png',
+                descricao: 'A Saint Bier Pilsen é uma cerveja de baixa fermentação, com coloração dourada, límpida e espuma cremosa.',
+                marca: 'Saint Bier',
+                coloracao: '10 EBC',
+                amargor:'12 lBU',
+                alcolico: '5,0%',
+                cervejaria: 'Santa Catarina',
                 data_lancamento: new Date(2019,1,21),
-                estilo: Estilo.ALTBIER
+                estilo: Estilo.PILSEN
             },
             {
                 codigo: 2,
-                nome: 'Metamorphosis: Henshin',
-                foto_cerveja: 'https://honeysanime.com/wp-content/uploads/2016/10/Henshin-manga-300x463.jpg',
-                descricao: 'Saki Yoshida, é uma menina que ficou isolada pelo fato de ser introvertida, querendo mudar de ideia, ela muda de colégio e coemça a tentar subir sua escala social através da beleza, e acaba se drogando e isso acarretará em sua metamorfose.',
-                marca: 'Wizards of the Coast, TSR, Inc., Kenzer & Company',
-                cervejaria: 'Nenhuma',
+                nome: 'Saint Bier Belgian',
+                foto_cerveja: 'http://www.saintbier.com/slir/w344-h866/upload/product_image/belgian-golden-ale-5c3dd7f6ec99b.png',
+                descricao: 'São maltadas, com aroma frutado, de amargor leve e sabor picante, com cor variando do âmbar ao cobre.',
+                marca: 'Saint Bier',
+                coloracao: '20 EBC',
+                amargor:'14 lBU',
+                alcolico: '5,2%',
+                cervejaria: 'Santa Catarina',
                 data_lancamento: new Date(2013,6,14),
                 estilo: Estilo.BELGIAN_DUBBEL
             },
             {
                 codigo: 3,
-                nome: 'A maldição do tigre',
-                foto_cerveja: 'https://images-na.ssl-images-amazon.com/images/I/91Iq1jyYlAL.jpg',
-                descricao: 'Tigers Curse é um romance dos gêneros épico, aventura e mitologia hindu, escrito por Colleen Houck e é o primeiro livro de uma série. Publicado em mais 18 países, chegou a umas das melhores posições no The New York Times. Foi rejeitado por muitas',
-                marca: 'Wizards of the Coast, TSR, Inc., Kenzer & Company',
-                cervejaria: 'Arqueiro',
+                nome: 'San Diego',
+                foto_cerveja: 'https://d2o1s8t60x9u9v.cloudfront.net/Custom/Content/Products/98/56/985690_cerveja-barco-san-diego-apa-600ml_m1_636686321331493250.jpg',
+                descricao: 'Elaborada no estilo American Pale Ale, possui 5.4% de teor alcoólico, com um bom amargor',
+                marca: 'Barco Brewers',
+                coloracao: '9 EBC',
+                amargor:'36 lBU',
+                alcolico: '5,4%',
+                cervejaria: 'Santa Catarina',
                 data_lancamento: new Date(2011),
-                estilo: Estilo.BOCK
+                estilo: Estilo.AMERICAN_PALE_ALE
             },
             {
                 codigo: 4,
-                nome: 'Naruto Shippuden',
-                foto_cerveja: 'https://img.quizur.com/f/img5ee2777517b723.40460255.png?lastEdited=1591900059',
-                descricao: 'Naruto é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento e sonha em se tornar Hokage, o ninja líder de sua vila',
-                marca: 'Wizards of the Coast, TSR, Inc., Kenzer & Company',
-                cervejaria: 'Shueisha',
+                nome: 'Coruja Weizen',
+                foto_cerveja: 'https://clubedomalte.fbitsstatic.net/img/p/coruja-weizen-garrafa-500ml-90641/257825.jpg?w=422&h=422&v=202010231028',
+                descricao: 'Clássica como uma cerveja de trigo, mas com um toque de criatividade, a Coruja Weizen traz as típicas notas de cravo e banana das weizenbier, acompanhadas de um toque de personalidade do malte levemente defumado.',
+                marca: 'Coruja',
+                coloracao: '15 EBC',
+                amargor:'18 lBU',
+                alcolico: '5,5%',
+                cervejaria: 'Santa Catarina',
                 data_lancamento: new Date(2007),
-                estilo: Estilo.MUNICH_HELLES
+                estilo: Estilo.WEIZENBIER
             }
      
         ];

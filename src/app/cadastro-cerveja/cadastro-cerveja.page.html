@@ -22,6 +22,16 @@
   </ion-item>
 
   <ion-item>
+    <ion-label>Coloração</ion-label>
+    <ion-input [(ngModel)]="cerveja.coloracao" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Amargor</ion-label>
+    <ion-input [(ngModel)]="cerveja.amargor" ></ion-input>
+  </ion-item>
+
+  <ion-item>
     <ion-label>Data de Lançamento</ion-label>
     <ion-datetime [(ngModel)]="cerveja.data_lancamento"
             displayFormat="DD/MM/YYYY"
@@ -47,6 +57,12 @@
     <ion-label>Imagem</ion-label>
     <ion-input [(ngModel)]="cerveja.foto_cerveja"></ion-input>
   </ion-item>
+
+  <ion-fab vertical="bottom">
+    <ion-fab-button>
+      <ion-icon name="arrow-undo-outline" [routerLink]="['/lista-cerveja']"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="salvar()">

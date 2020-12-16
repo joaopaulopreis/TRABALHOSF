@@ -25,6 +25,8 @@ export enum Estilo{
     BELGIAN_DARK_STRONG_ALE = 'Belgian Dark Strong Ale',
     ENGLISH_BARLEY_WINE = 'English Barley Wine',
     RAUCHBIER = 'Rauchbier',
-    FRUITBIER = 'Fruit Beer'
+    FRUITBIER = 'Fruit Beer',
+    AMERICAN_PALE_ALE = 'American Pale Ale',
+    DOUBLE_IPA = 'Double Ipa'
     
 }
